@@ -1,0 +1,45 @@
+.widget{
+    display: flex;
+     width: 180px; // space between right and left
+    //  flex: 1;  // to space more 
+     padding: 10px;
+     justify-content: space-between; // make separate each items 
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47); // background style
+    box-shadow: 2px 4px 10px 1px rgba(226, 165, 165, 0.47); // bachground style
+    border-radius: 10px; 
+    height: 80px;   
+}
+.left, 
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    .profit{
+        padding: 5px;
+        font-size: 13px;
+        color: rgb(109, 108, 108);
+    }
+    .counter{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .digit{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        // font-family: Poppins,sans-serif;
+        padding: 40px;
+        padding-left:0px;
+
+        &.positive{
+            color: blue;
+        }
+        &.negative{
+            color: white;
+        }
+        &.negative{
+            color:white;
+        }
+    }
+}
